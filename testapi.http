@@ -1,0 +1,26 @@
+local = http://127.0.0.1:8000
+###
+GET http://127.0.0.1:8000/url-shortener/list
+
+{}
+
+###
+POST http://127.0.0.1:8000/url-shortener/create
+
+{
+    "url": "http://vnexpress.net"
+}
+
+###
+GET http://127.0.0.1:8000/url-shortener/go/BZPC7AK
+
+{
+    "url": "http://vnexpress.net"
+}
+
+###
+GET http://127.0.0.1:8000/url-shortener/test/6LDOGRV
+
+{
+    "url": "http://vnexpress.net"
+}
